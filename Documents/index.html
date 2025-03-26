@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/index.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/alpine.min.js" defer></script>
+
+  <title>Mon site - Projet</title>
+</head>
+
+<body class="font-kanit">
+  <header class="bg-gray-950">
+    <nav class="flex justify-between items-center px-6 md:px-12 py-5 z-10 absolute w-full">
+      <a href="#">
+        <i class="text-white" data-feather="home"></i>
+      </a>
+      <ul class="flex gap-4 md:gap-10 text-white text-sm md:text-base">
+        <li class="text-lime-400"><a href="#">Accueil</a></li>
+        <li class="hover:text-lime-400"><a href="#">A propos</a></li>
+        <li class="hover:text-lime-400"><a href="#">Projets</a></li>
+        <li class="hover:text-lime-400"><a href="#">Carrière</a></li>
+        <li class="hover:text-lime-400"><a href="#">Contacts</a></li>
+        <li class="border rounded px-2 border-2 text-white hover:text-lime-400"><a href="#">Télécharger CV</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <!-- First section -->
+    <section class="grain w-screen h-screen bg-slate-700 px-4 md:px-10 pt-20 pb-12 flex flex-col overflow-hidden">
+      <div class="flex flex-1 flex-row md:flex-row md:h-5/6">
+        <div class="text-white md:w-1/2 pt-12 animate__animated animate__backInUp">
+          <span class="text-3xl md:text-4xl">Bonjour, je suis...</span>
+          <div class="typewriter h-40 pl-10">
+            <h1 class="text-5xl md:text-7xl text-lime-400" id="text"></h1>
+          </div>
+          <span class="text-3xl md:text-4xl pl-10 md:pl-20">Développeur Web Junior</span>
+        </div>
+        <div class="hidden md:flex md:flex-row md:w-1/2 md:mt-10 md:mt-0 ">
+          <div>
+            <img class="w-40 md:w-full h-auto" src="../img/moi.png" alt="">
+          </div>
+          <div class="mt-10 md:mt-0 animate__animated animate__backInUp">
+            <ul class="flex flex-row md:flex-col gap-6">
+              <li><a href=""><i class="text-white hover:text-lime-400" data-feather="facebook"></i></a></li>
+              <li><a href=""><i class="text-white hover:text-lime-400" data-feather="twitter"></i></a></li>
+              <li><a href=""><i class="text-white hover:text-lime-400" data-feather="instagram"></i></a></li>
+              <li><a href=""><i class="text-white hover:text-lime-400" data-feather="github"></i></a></li>
+              <li><a href=""><i class="text-white hover:text-lime-400" data-feather="codepen"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <i class="hover:text-lime-400 size-12 text-white" data-feather="chevrons-down"></i>
+      </div>
+    </section>`
+    <!-- Third section -->
+    <section class="h-auto bg-slate-900 text-white py-10 px-4 md:px-20 animate-element">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 mb-10 md:mb-0 flex flex-col gap-4">
+          <span class="block md:px-20 text-lime-400 text-4xl">Mes services</span>
+          <h2 class="text-3xl md:text-4xl md:px-20">Une offre de site dynamique basée sur des compétences acquises
+            pendant ma formation.</h2>
+            <a href="#">
+              <p
+                class="text-slate-800 hover:text-lime-400 hover:border bg-lime-400 hover:bg-transparent rounded-xl w-48 text-center mx-20 text-xl transition-all duration-300 ease-in-out transform hover:scale-105">
+                Me contacter
+              </p>
+            </a>
+        </div>
+        <div class="md:w-1/2 flex flex-col gap-4">
+          <article
+            class="bg-white transition-all ease-in-out delay-100 hover:bg-lime-400 rounded-xl text-slate-800 hover:text-slate-950 p-8 hover:scale-105">
+            <i class="hover:text-lime-400 bg-slate-800 rounded-full text-white size-6 text-center justify-center"
+              data-feather="at-sign"></i>
+            <div class="flex flex-col">
+              <h3 class="text-3xl ">Web Design</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt fuga ratione ab eligendi
+                voluptatibus.</p>
+            </div>
+          </article>
+          <article
+            class="bg-white transition-all ease-in-out delay-100 hover:bg-lime-400 rounded-xl text-slate-800 hover:text-slate-950 p-8 hover:scale-105">
+            <i class="hover:text-lime-400 bg-slate-800 rounded-full text-white size-6 text-center justify-center"
+              data-feather="chrome"></i>
+            <div class="flex flex-col">
+              <h3 class="text-3xl">Frontend</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt fuga ratione ab eligendi
+                voluptatibus.</p>
+            </div>
+          </article>
+          <article
+            class="bg-white transition-all ease-in-out delay-100 hover:bg-lime-400 rounded-xl text-slate-800 hover:text-slate-950 p-8 hover:scale-105">
+            <i class="hover:text-lime-400 bg-slate-800 rounded-full text-white size-6 text-center justify-center"
+              data-feather="globe"></i>
+            <div class="flex flex-col">
+              <h3 class="text-3xl">Backend</h3>
+              <p> Expérience dans de nombreux projets backend. Connaisance sur la gestion de base de données, comme MangoDB et MySQL</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="flex justify-center my-5 scrollby">
+        <a href="#">
+          <i class="hover:text-lime-400 size-12" data-feather="chevrons-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Second section -->
+    <section class="h-auto bg-slate-300 py-10">
+      <div class="flex flex-col md:flex-row">
+        <article class="p-4 bg-slate-100 rounded-xl text-slate-800 flex flex-col gap-4 mx-4 mb-10 md:mb-0 h-96">
+          <a class="flex items-center justify-center" href="#">
+            <i class="hover:text-lime-400" data-feather="activity"></i>
+          </a>
+          <h2 class="text-3xl">Autonomie</h2>
+          <p class="pl-4">Je suis une personne autonome, capable de gérer efficacement mes tâches sans supervision
+            constante. Organisé et proactif, je sais prioriser mes responsabilités et atteindre mes objectifs dans les
+            délais impartis. Grâce à ma capacité d'adaptation, je m'ajuste rapidement aux changements et je trouve des
+            solutions innovantes aux défis qui se présentent.</p>
+        </article>
+        <article class="p-4 bg-slate-100 rounded-xl text-slate-800 flex flex-col gap-4 mx-4 mb-10 md:mb-0 h-96">
+          <a class="flex items-center justify-center" href="#">
+            <i class="hover:text-lime-400" data-feather="activity"></i>
+          </a>
+          <h2 class="text-3xl">Bonne humeur</h2>
+          <p class="pl-4">Je suis une personne naturellement de bonne humeur, ce qui me permet de créer une atmosphère
+            positive autour de moi. Mon optimisme est contagieux et aide à maintenir un environnement de travail
+            agréable et motivant. Toujours souriant, j'aborde les défis avec une attitude positive et je cherche des
+            solutions plutôt que de me concentrer sur les problèmes.</p>
+        </article>
+        <article class="p-4 bg-slate-100 rounded-xl text-slate-800 flex flex-col gap-4 mx-4 mb-10 md:mb-0 h-96">
+          <a class="flex items-center justify-center" href="#">
+            <i class="hover:text-lime-400" data-feather="activity"></i>
+          </a>
+          <h2 class="text-3xl">Autonomie</h2>
+          <p class="pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eius exercitationem quia odit ut
+            nobis et excepturi repellat aliquam? Alias ad quia harum nemo vero deserunt repellat amet assumenda earum.
+          </p>
+        </article>
+        <article class="p-4 bg-slate-100 rounded-xl text-slate-800 flex flex-col gap-4 mx-4 h-96">
+          <a class="flex items-center justify-center" href="#">
+            <i class="hover:text-lime-400" data-feather="activity"></i>
+          </a>
+          <h2 class="text-3xl">Autonomie</h2>
+          <p class="pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eius exercitationem quia odit ut
+            nobis et excepturi repellat aliquam? Alias ad quia harum nemo vero deserunt repellat amet assumenda earum.
+          </p>
+        </article>
+      </div>
+      <div class="flex justify-center my-20">
+        <i class="hover:text-lime-400 size-12" data-feather="chevrons-down"></i>
+      </div>
+    </section>
+
+    <!-- Fourth section -->
+    <section class="bg-slate-900  flex flex-wrap md:flex-nowrap gap-4 md:py-20 " itemscope
+      itemtype="https://schema.org/Article" aria-labelledby="article-title">
+      <figure class="w-full flex justify-center items-center">
+        <img src="https://picsum.photos/300/300" alt="Image description" class="rounded-xl" itemprop="image">
+        <figcaption class="hidden">Image article</figcaption>
+      </figure>
+
+      <article class="w-full flex flex-col md:pt-6 md:mr-24 text-lime-400">
+        <h2 id="article-title" class="font-bold mb-3 text-4xl text-center sm:text-left" itemprop="headline">Nice
+          Features</h2>
+        <p class="mb-4 text-center sm:text-left text-white" itemprop="articleBody">Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Soluta praesentium voluptatibus accusamus aspernatur possimus, omnis a quisquam
+          aut quis, porro libero illum odio quibusdam vitae rem, optio distinctio aliquid. Iusto.</p>
+        <ul class="flex flex-wrap text-sm  gap-y-3 pt-6" aria-label="Article features">
+          <li class="article-tags text-lime-400" itemprop="about"><i data-feather="check-circle"
+              aria-hidden="true"></i><span class="pl-3">Unlimited domain names</span></li>
+          <li class="article-tags text-lime-400" itemprop="about"><i data-feather="check-circle"
+              aria-hidden="true"></i><span class="pl-3">Lifetimes updates</span></li>
+          <li class="article-tags text-lime-400" itemprop="about"><i data-feather="check-circle"
+              aria-hidden="true"></i><span class="pl-3">150+ Components</span></li>
+          <li class="article-tags text-lime-400" itemprop="about"><i data-feather="check-circle"
+              aria-hidden="true"></i><span class="pl-3">24/7 Technical support</span></li>
+        </ul>
+      </article>
+    </section>
+
+  </main>
+  <script src="../js/typewriter.js"></script>
+  <script src="../js/animate.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>
