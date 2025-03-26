@@ -157,40 +157,52 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
 
         <!-- Liste de réseaux sociaux -->
-        <ul
-          class="flex md:flex-col gap-6 mt-8 md:mt-0 md:absolute md:right-16"
-          data-animation="animate__fadeInRight"
-        >
-          <li>
+        <ul class="absolute right-16 flex flex-col gap-6" data-animation="animate__fadeInRight">
+          <li class="group relative flex items-center justify-end">
+            <span class="absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
+              Voir mon GitHub
+            </span>
             <a
-              href="https://github.com/votre-username"
+              href="https://github.com/Belgiusfrombe"
               target="_blank"
               class="text-white hover:text-maingreen transition-all transform hover:scale-150 duration-300 inline-block"
             >
               <Icon icon="mdi:github" width="32" height="32" />
             </a>
           </li>
-          <li>
+
+          <li class="group relative flex items-center justify-end">
+            <span class="absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
+              Voir mon CodePen
+            </span>
             <a
-              href="https://codepen.io/votre-username"
+              href="https://codepen.io/Belgiusfrombe"
               target="_blank"
               class="text-white hover:text-maingreen transition-all transform hover:scale-150 duration-300 inline-block"
             >
               <Icon icon="mdi:codepen" width="32" height="32" />
             </a>
           </li>
-          <li>
+
+          <li class="group relative flex items-center justify-end">
+            <span class="absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
+              Voir mon Linktree
+            </span>
             <a
-              href="https://linktr.ee/votre-username"
+              href="linktr.ee/alexandrearmanocs"
               target="_blank"
               class="text-white hover:text-maingreen transition-all transform hover:scale-150 duration-300 inline-block"
             >
               <Icon icon="simple-icons:linktree" width="32" height="32" />
             </a>
           </li>
-          <li>
+
+          <li class="group relative flex items-center justify-end">
+            <span class="absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
+              Voir mon LinkedIn
+            </span>
             <a
-              href="https://www.linkedin.com/in/alexandre-armano-cs/"
+              href="https://www.linkedin.com/in/alexandre-armano-108782328/"
               target="_blank"
               class="text-white hover:text-maingreen transition-all transform hover:scale-150 duration-300 inline-block"
             >

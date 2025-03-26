@@ -10,31 +10,29 @@ export const useProjectStore = defineStore('project', {
         longDescription: "Une application web moderne et responsive qui présente mes projets et compétences de manière interactive et élégante. Développée avec Vue.js pour une expérience utilisateur fluide et Tailwind CSS pour un design sur mesure.",
         technologies: ["Vue.js", "Tailwind CSS", "JavaScript", "Pinia"],
         imageUrl: new URL('../assets/img/portfolio.jpg', import.meta.url).href,
-        githubLink: "https://github.com/votre-username/portfolio",
+        githubLink: "https://github.com/Belgiusfrombe/template-caractere",
         demoLink: "https://votre-portfolio.com",
         category: "Web Development",
         features: [
           "Design responsive",
           "Animations fluides",
-          "Mode sombre/clair",
           "Performance optimisée"
         ]
       },
       {
         id: 2,
         title: "Portfolio Vue",
-        shortDescription: "Plateforme e-commerce complète avec panier et paiement",
-        longDescription: "Une application e-commerce full-stack offrant une expérience d'achat complète avec gestion de panier, système de paiement sécurisé et interface administrateur.",
-        technologies: ["Vue.js", "Node.js", "MongoDB", "Stripe"],
+        shortDescription: "Mon ancien portfolio",
+        longDescription: " Mon premier portfolio en Vue.js que je faisais en 2024, pas fini et pas optimisé d'un poil.",
+        technologies: ["Vue.js", "Tailwind CSS", "JavaScript"],
         imageUrl: new URL('../assets/img/oldportofolio.jpg', import.meta.url).href,
-        githubLink: "https://github.com/votre-username/ecommerce",
+        githubLink: "https://github.com/Belgiusfrombe/new-cv-app-vue",
         demoLink: "https://votre-ecommerce.com",
         category: "Full Stack",
         features: [
-          "Authentification utilisateur",
-          "Paiement sécurisé",
-          "Panel administrateur",
-          "Gestion des stocks"
+          "Design responsive",
+          "Animations fluides",
+          "Performance optimisée"
         ]
       },
       {
@@ -85,9 +83,9 @@ export const useProjectStore = defineStore('project', {
       {
         id: 6,
         title: "Application de gestion de contacts",
-        technologies: ["HTML", "CSS", "JavaScript", "Vue"],
+        technologies: ["HTML", "CSS", "JavaScript", "Vue", "Tailwind CSS", "Pinia"],
         imageUrl: new URL('../assets/img/contact-app.jpg', import.meta.url).href,
-        githubLink: "https://github.com/votre-username/restaurant",
+        githubLink: "https://github.com/Belgiusfrombe/contact_app_template",
         demoLink: "https://votre-restaurant.com",
         category: "Web Development",
         features: [
@@ -100,9 +98,9 @@ export const useProjectStore = defineStore('project', {
       {
         id: 7,
         title: "Flip Coin Master",
-        technologies: ["HTML", "CSS", "JavaScript", "Vue"],
+        technologies: ["HTML", "CSS", "JavaScript"],
         imageUrl: new URL('../assets/img/contact-app.jpg', import.meta.url).href,
-        githubLink: "https://github.com/votre-username/restaurant",
+        githubLink: "https://github.com/Belgiusfrombe/flip-the-coin-master",
         demoLink: "https://votre-restaurant.com",
         category: "Web Development",
         features: [

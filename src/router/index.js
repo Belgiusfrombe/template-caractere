@@ -6,6 +6,8 @@ import Contact from '../views/Contact.vue'
 import Uiux from '../views/Uiux.vue'
 import Dev from '../views/Dev.vue'
 import Design from '../views/Design.vue'
+import About from '../views/About.vue'
+import Services from '../views/Services.vue'
 
 const routes = [
   {
@@ -43,6 +45,16 @@ const routes = [
     path: '/design',
     name: 'design',
     component: Design
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: About
+  },
+  {
+    path: '/services',
+    name: 'services',
+    component: Services
   }
 ];
 
