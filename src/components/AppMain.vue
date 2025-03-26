@@ -157,9 +157,9 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
 
         <!-- Liste de réseaux sociaux -->
-        <ul class="absolute right-16 flex flex-col gap-6" data-animation="animate__fadeInRight">
-          <li class="group relative flex items-center justify-end">
-            <span class="absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
+        <ul class="md:absolute relative mt-4 md:mt-0 md:right-16 flex flex-row md:flex-col justify-center md:justify-start gap-6" data-animation="animate__fadeInRight">
+          <li class="group relative flex items-center justify-center md:justify-end">
+            <span class="hidden md:block absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
               Voir mon GitHub
             </span>
             <a
@@ -167,12 +167,12 @@ document.addEventListener("DOMContentLoaded", () => {
               target="_blank"
               class="text-white hover:text-maingreen transition-all transform hover:scale-150 duration-300 inline-block"
             >
-              <Icon icon="mdi:github" width="32" height="32" />
+              <Icon icon="mdi:github" class="w-6 h-6 md:w-8 md:h-8" />
             </a>
           </li>
 
-          <li class="group relative flex items-center justify-end">
-            <span class="absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
+          <li class="group relative flex items-center justify-center md:justify-end">
+            <span class="hidden md:block absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
               Voir mon CodePen
             </span>
             <a
@@ -180,12 +180,12 @@ document.addEventListener("DOMContentLoaded", () => {
               target="_blank"
               class="text-white hover:text-maingreen transition-all transform hover:scale-150 duration-300 inline-block"
             >
-              <Icon icon="mdi:codepen" width="32" height="32" />
+              <Icon icon="mdi:codepen" class="w-6 h-6 md:w-8 md:h-8" />
             </a>
           </li>
 
-          <li class="group relative flex items-center justify-end">
-            <span class="absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
+          <li class="group relative flex items-center justify-center md:justify-end">
+            <span class="hidden md:block absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
               Voir mon Linktree
             </span>
             <a
@@ -193,12 +193,12 @@ document.addEventListener("DOMContentLoaded", () => {
               target="_blank"
               class="text-white hover:text-maingreen transition-all transform hover:scale-150 duration-300 inline-block"
             >
-              <Icon icon="simple-icons:linktree" width="32" height="32" />
+              <Icon icon="simple-icons:linktree" class="w-6 h-6 md:w-8 md:h-8" />
             </a>
           </li>
 
-          <li class="group relative flex items-center justify-end">
-            <span class="absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
+          <li class="group relative flex items-center justify-center md:justify-end">
+            <span class="hidden md:block absolute right-full mr-4 transform translate-x-8 opacity-0 transition-all duration-300 text-white whitespace-nowrap group-hover:translate-x-0 group-hover:opacity-100">
               Voir mon LinkedIn
             </span>
             <a
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
               target="_blank"
               class="text-white hover:text-maingreen transition-all transform hover:scale-150 duration-300 inline-block"
             >
-              <Icon icon="mdi:linkedin" width="32" height="32" />
+              <Icon icon="mdi:linkedin" class="w-6 h-6 md:w-8 md:h-8" />
             </a>
           </li>
         </ul>

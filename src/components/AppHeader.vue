@@ -10,6 +10,9 @@ export default {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
+    closeMenu() {
+      this.isMenuOpen = false;
+    },
   },
 };
 </script>
@@ -28,40 +31,18 @@ export default {
             >
               Développeur Web Junior
             </p>
-            <svg
-              width="40"
-              transform="translate(0, -40)"
-              version="1.1"
-              id="Calque_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 70.35 68.76"
-              style="enable-background: new 0 0 70.35 68.76"
-              xml:space="preserve"
-            >
+            <svg width="40" transform="translate(0, -40)" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70.35 68.76"
+              style="enable-background:new 0 0 70.35 68.76;" xml:space="preserve">
               <g>
-                <path
-                  class="st0"
-                  d="M29.26,37.11h-6.68c-2.75,0-4.98-2.23-4.98-4.98v-6.68c0-2.75,2.23-4.98,4.98-4.98h6.68
-		c2.75,0,4.98,2.23,4.98,4.98v6.68C34.24,34.88,32.01,37.11,29.26,37.11z"
-                />
-                <path
-                  class="st1"
-                  d="M41.81,56.57h-6.68c-2.75,0-4.98-2.23-4.98-4.98v-6.68c0-2.75,2.23-4.98,4.98-4.98h6.68
-		c2.75,0,4.98,2.23,4.98,4.98v6.68C46.79,54.34,44.56,56.57,41.81,56.57z"
-                />
-                <path
-                  class="st2"
-                  d="M41.81,37.11L41.81,37.11c-2.75,0-4.98-2.23-4.98-4.98v-6.68c0-2.75,2.23-4.98,4.98-4.98h0
-		c2.75,0,4.98,2.23,4.98,4.98v6.68C46.79,34.88,44.56,37.11,41.81,37.11z"
-                />
-                <path
-                  class="st3"
-                  d="M22.59,49.89L22.59,49.89c-2.75,0-4.98-2.23-4.98-4.98v0c0-2.75,2.23-4.98,4.98-4.98h0
-		c2.75,0,4.98,2.23,4.98,4.98v0C27.57,47.66,25.34,49.89,22.59,49.89z"
-                />
+                <path class="st0" d="M29.26,37.11h-6.68c-2.75,0-4.98-2.23-4.98-4.98v-6.68c0-2.75,2.23-4.98,4.98-4.98h6.68
+		c2.75,0,4.98,2.23,4.98,4.98v6.68C34.24,34.88,32.01,37.11,29.26,37.11z" />
+                <path class="st1" d="M41.81,56.57h-6.68c-2.75,0-4.98-2.23-4.98-4.98v-6.68c0-2.75,2.23-4.98,4.98-4.98h6.68
+		c2.75,0,4.98,2.23,4.98,4.98v6.68C46.79,54.34,44.56,56.57,41.81,56.57z" />
+                <path class="st2" d="M41.81,37.11L41.81,37.11c-2.75,0-4.98-2.23-4.98-4.98v-6.68c0-2.75,2.23-4.98,4.98-4.98h0
+		c2.75,0,4.98,2.23,4.98,4.98v6.68C46.79,34.88,44.56,37.11,41.81,37.11z" />
+                <path class="st3" d="M22.59,49.89L22.59,49.89c-2.75,0-4.98-2.23-4.98-4.98v0c0-2.75,2.23-4.98,4.98-4.98h0
+		c2.75,0,4.98,2.23,4.98,4.98v0C27.57,47.66,25.34,49.89,22.59,49.89z" />
               </g>
             </svg>
           </div>
@@ -83,11 +64,11 @@ export default {
       <div class="header__menu" :class="{ 'is-open': isMenuOpen }">
         <nav class="header__nav">
           <ul>
-            <li><router-link to="/">Accueil</router-link></li>
-            <li><router-link to="/project">Mes projets</router-link></li>
-            <li><router-link to="/about">À propos</router-link></li>
-            <li><router-link to="/services">Services</router-link></li>
-            <li><router-link to="/contact">Contact</router-link></li>
+            <li><router-link @click="closeMenu" to="/">Accueil</router-link></li>
+            <li><router-link @click="closeMenu" to="/project">Mes projets</router-link></li>
+            <li><router-link @click="closeMenu" to="/about">À propos</router-link></li>
+            <li><router-link @click="closeMenu" to="/services">Services</router-link></li>
+            <li><router-link @click="closeMenu" to="/contact">Contact</router-link></li>
           </ul>
         </nav>
       </div>
@@ -96,6 +77,22 @@ export default {
 </template>
 
 <style scoped>
+.st0 {
+    fill: #0BFF9B;
+  }
+
+  .st1 {
+    fill: #A9FF22;
+  }
+
+  .st2 {
+    fill: #1AFFAC;
+  }
+
+  .st3 {
+    fill: #06FF5F;
+  }
+  
 .header {
   position: absolute;
   top: 0;
