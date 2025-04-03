@@ -32,6 +32,18 @@
             class="w-full rounded-lg shadow-lg"
           />
           <div class="flex gap-4">
+            <img  
+              :src="currentProject.imageUrl"
+              :alt="currentProject.title"
+              class="w-full rounded-lg shadow-lg"
+            />
+            <img
+              :src="currentProject.imageUrl"
+              :alt="currentProject.title"
+              class="w-full rounded-lg shadow-lg"
+            />
+          </div>
+          <div class="flex gap-4">
             <a
               :href="currentProject.demoLink"
               target="_blank"

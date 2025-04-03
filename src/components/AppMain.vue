@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
               Voir mon Linktree
             </span>
             <a
-              href="linktr.ee/alexandrearmanocs"
+              href="https://linktr.ee/alexandrearmanocs"
               target="_blank"
               class="text-white hover:text-maingreen transition-all transform hover:scale-150 duration-300 inline-block"
             >
@@ -222,11 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
             Mon Portfolio
           </h2>
           <p class="text-white leading-8 md:leading-10 border-l-2 border-maingreen pl-4">
-            Située aux abords de Liège, depuis 2007, l'agence Caractère agit en
-            tant que véritable partenaire de votre communication et vous aide à
-            atteindre vos objectifs. Nous combinons créativité, expertise,
-            professionnalisme et innovation pour donner vie à des projets
-            extraordinaires !
+            Je suis actuellement en reconversion professionnelle, un parcours motivé par ma passion pour la technologie et l’envie d'élargir mes compétences. Anciennement graphiste, j’ai acquis une solide expérience dans la création visuelle et la communication. Cependant, ma nouvelle voie s'oriente vers le développement, où je mets à profit ma créativité et ma rigueur pour apprendre et maîtriser différentes technologies. Mon objectif est de me spécialiser dans le développement web et logiciel, en explorant les différentes facettes de ce domaine pour devenir un développeur polyvalent.
           </p>
         </div>
 
@@ -234,7 +230,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="w-full md:w-2/3 flex flex-col">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <router-link
-              v-for="project in projects.slice(0, 2)"
+              v-for="project in projects.slice(0, 6)"
               :key="project.id"
               :to="{ name: 'project-detail', params: { id: project.id } }"
               class="group"
@@ -275,7 +271,7 @@ document.addEventListener("DOMContentLoaded", () => {
               to="/project"
               class="text-maingreen hover-underline-animation inline-block text-lg"
             >
-              Voir tous mes projets
+              Voir mes projets
             </router-link>
           </div>
         </div>
@@ -435,11 +431,11 @@ document.addEventListener("DOMContentLoaded", () => {
               web performantes et esthétiques.
             </p>
             <div class="flex gap-4">
-              <a href="https://github.com/votre-username" target="_blank" 
+              <a href="https://github.com/belgiusfrombe" target="_blank" 
                 class="group flex items-center gap-2 bg-[#0f172a] p-2 rounded-lg hover:bg-maingreen/10 transition-colors">
                 <Icon icon="mdi:github" class="text-xl text-white group-hover:text-maingreen transition-colors" />
               </a>
-              <a href="https://www.linkedin.com/in/alexandre-armano-cs/" target="_blank"
+              <a href="https://www.linkedin.com/in/alexandre-armano-108782328/" target="_blank"
                 class="group flex items-center gap-2 bg-[#0f172a] p-2 rounded-lg hover:bg-maingreen/10 transition-colors">
                 <Icon icon="mdi:linkedin" class="text-xl text-white group-hover:text-maingreen transition-colors" />
               </a>

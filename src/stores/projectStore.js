@@ -7,7 +7,7 @@ export const useProjectStore = defineStore('project', {
         id: 1,
         title: "Portfolio Vue CLI & Pinia",
         shortDescription: "Portfolio personnel développé avec Vue.js et Tailwind CSS",
-        longDescription: "Une application web moderne et responsive qui présente mes projets et compétences de manière interactive et élégante. Développée avec Vue.js pour une expérience utilisateur fluide et Tailwind CSS pour un design sur mesure.",
+        longDescription: "Le portfolio est le reflet de l'âme d'un développeur, de son parcours, et celui-ci est le mien, mes débuts.",
         technologies: ["Vue.js", "Tailwind CSS", "JavaScript", "Pinia"],
         imageUrl: new URL('../assets/img/portfolio.jpg', import.meta.url).href,
         githubLink: "https://github.com/Belgiusfrombe/template-caractere",
@@ -38,6 +38,8 @@ export const useProjectStore = defineStore('project', {
       {
         id: 3,
         title: "Site pour un restaurant",
+        shortDescription: "Site d'un restaurant",
+        longDescription: "Le site d'un restaurant que j'ai réalisé à mes débuts est un exemple de mon travail. Chaque projet est mis en avant et illustre les progrès que j'ai accomplis en peu de temps.",
         technologies: ["HTML", "CSS", "JavaScript"],
         imageUrl: new URL('../assets/img/katkarestaurant.jpg', import.meta.url).href,
         githubLink: "https://github.com/votre-username/restaurant",
@@ -53,6 +55,8 @@ export const useProjectStore = defineStore('project', {
       {
         id: 4,
         title: "Template pour mes projets",
+        shortDescription: "Template d'apprentissage",
+        longDescription: "Template d'apprentissage pour mes débuts et la compréhension de mes premiers framework, plus explications",
         technologies: ["HTML", "CSS", "JavaScript"],
         imageUrl: new URL('../assets/img/templateproject.jpg', import.meta.url).href,
         githubLink: "https://github.com/votre-username/restaurant",
@@ -68,9 +72,11 @@ export const useProjectStore = defineStore('project', {
       {
         id: 5,
         title: "RetroMonsters - Jeu de combat",
+        shortDescription: "Jeu de carte avec des monstres à stocker",
+        longDescription: "Premiers gros projets fullstack, intégration de SQL et de php pour la gestion de données",
         technologies: ["HTML", "CSS", "JavaScript", "Vue"],
         imageUrl: new URL('../assets/img/retromonsters.jpg', import.meta.url).href,
-        githubLink: "https://github.com/votre-username/restaurant",
+        githubLink: "https://github.com/Belgiusfrombe/laravel-docker-monster-2025-main_final",
         demoLink: "https://votre-restaurant.com",
         category: "Web Development",
         features: [
@@ -108,7 +114,27 @@ export const useProjectStore = defineStore('project', {
           "Animations fluides",
           "Mode sombre/clair",
           "Performance optimisée"
-        ]
+        ],
+      },
+      {
+        id: 8,
+        title: "Vault",
+        technologies: ["HTML", "CSS", "JavaScript", "MangoDB", "Node.js"],
+        shortDescription: "Site Web pour dev et graphiste",
+        longDescription: "Appliction Web qui donne beaucoup de ressources pour les développeurs, comme des templates, des images, des icônes, etc. Développée avec Vue.js pour une expérience utilisateur fluide et Tailwind CSS pour un design sur mesure.",
+        imageUrl: new URL('../assets/img/vault.png', import.meta.url).href,
+        githubLink: "https://github.com/Belgiusfrombe/MyVault",
+        demoLink: "https://votre-restaurant.com",
+        category: "Web Development",
+        features: [
+          "Design responsive",
+          "Animations fluides",
+          "Mode sombre/clair",
+          "Performance optimisée",
+          "Authentification sécurisée",
+          "Gestion des utilisateurs",
+          "Stockage sécurisé des données",
+        ],
       },
     ]
   }),
@@ -117,9 +143,11 @@ export const useProjectStore = defineStore('project', {
     getProjectById: (state) => {
       return (projectId) => state.projects.find(project => project.id === projectId)
     },
-    getAllProjects: (state) => state.projects,
-    getProjectsByCategory: (state) => {
-      return (category) => state.projects.filter(project => project.category === category)
+    getAllProjects: (state) => {
+      return state.projects;
+    },
+    getProjectCount: (state) => {
+      return state.projects.length;
     }
   }
-}) 
+})
