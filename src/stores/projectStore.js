@@ -618,6 +618,186 @@ export const useProjectStore = defineStore('project', {
           "Impression Stickers"
         ]
       },
+      {
+        id: 26,
+        title: "Pull Saint-Luc",
+        slug: "pull-saint-luc",
+        shortDescription: "Création des pulls de Saint-Luc",
+        longDescription: "Création d'une affiche A2 pour un concert de jazz. Travail sur la composition typographique et l’harmonie des couleurs pour évoquer l’ambiance chaleureuse du jazz.",
+        tools: ["Photoshop", "Illustrator"],
+        formats: ["A2", "Print", "Web"],
+        imageUrl: new URL('../assets/img/stluc/Logo_st_luc-01.png', import.meta.url).href,
+        imageUrls: [
+          new URL('../assets/img/stluc/Logo_st_luc-02.png', import.meta.url).href,
+          new URL('../assets/img/stluc/Logo_st_luc-03.png', import.meta.url).href,
+          new URL('../assets/img/stluc/Logo_st_luc-04.png', import.meta.url).href,
+        ],
+        client: "Charabia",
+        category: "Graphisme",
+        features: [
+          "Design moderne",
+          "Palette de couleurs chaudes",
+          "Impression Stickers"
+        ]
+      },
+      {
+        id: 27,
+        title: "Bruss Icecream",
+        slug: "bruss-icecream",
+        shortDescription: "Logo pour un marchand de glaces",
+        longDescription: "Création d'un logo pour un marchand de glaces. Le design évoque la convivialité et l'amour des glaces.",
+        tools: ["Photoshop", "Illustrator"],
+        formats: ["A2", "Print", "Web"],
+        imageUrl: new URL('../assets/img/bruss/Bruss-03.png', import.meta.url).href,
+        imageUrls: [
+          new URL('../assets/img/bruss/Bruss-02.png', import.meta.url).href,
+          new URL('../assets/img/bruss/Bruss-01.png', import.meta.url).href,
+        ],
+        client: "Charabia",
+        category: "Graphisme",
+        features: [
+          "Design moderne",
+          "Palette de couleurs chaudes",
+          "Impression Stickers"
+        ]
+      },
+      {
+        id: 28,
+        title: "House Gambling - Logo",
+        slug: "house-gambling",
+        shortDescription: "logo pour un site de paris",
+        longDescription: "Création d'un logo pour un site de paris. Le design évoque le tournant des jeux de hasard.",
+        tools: ["Photoshop", "Illustrator"],
+        formats: ["A2", "Print", "Web"],
+        imageUrl: new URL('../assets/img/fictif/01.png', import.meta.url).href,
+        imageUrls: [
+          new URL('../assets/img/fictif/02.png', import.meta.url).href,
+          new URL('../assets/img/fictif/03.png', import.meta.url).href,
+        ],
+        client: "Charabia",
+        category: "Graphisme",
+        features: [
+          "Design moderne",
+          "Palette de couleurs chaudes",
+          "Impression Stickers"
+        ]
+      },
+      {
+        id: 29,
+        title: "SaintBiose - Banner",
+        slug: "saintbiose",
+        shortDescription: "Bannière pour un event",
+        longDescription: "Création d'une bannière pour un événement. Travail sur la composition typographique et l’harmonie des couleurs pour évoquer l’ambiance chaleureuse du jazz.",
+        tools: ["Photoshop", "Illustrator"],
+        formats: ["A2", "Print", "Web"],
+        imageUrl: new URL('../assets/img/fictif/saintbiose.png', import.meta.url).href,
+        client: "Cba Saint-Luc",
+        category: "Graphisme",
+        features: [
+          "Design moderne",
+          "Palette de couleurs chaudes",
+          "Impression Stickers"
+        ]
+      },
+      {
+        id: 30,
+        title: "WifiScan - Logo",
+        slug: "wifiscan",
+        shortDescription: "Logo pour une boite de wifi",
+        longDescription: "Création d'un logo pour un événement. Le design évoque la convivialité et l'amour des livres.",
+        tools: ["Photoshop", "Illustrator"],
+        formats: ["A2", "Print", "Web"],
+        imageUrl: new URL('../assets/img/fictif/wifiscan-01.png', import.meta.url).href,
+        imageUrls: [
+          new URL('../assets/img/fictif/wifiscan-02.png', import.meta.url).href,
+        ],
+        client: "Cba Saint-Luc",
+        category: "Graphisme",
+        features: [
+          "Design moderne",
+          "Palette de couleurs chaudes",
+          "Impression Stickers"
+        ]
+      },
+      {
+        id: 31,
+        title: "Lyoncaps",
+        slug: "lyoncaps",
+        shortDescription: "Communcation pour une marque de vetements",
+        longDescription: "Création d'un logo pour un événement. Le design évoque la convivialité et l'amour des livres.",
+        tools: ["Photoshop", "Illustrator"],
+        formats: ["A2", "Print", "Web"],
+        imageUrl: new URL('../assets/img/lyoncaps/lc1.png', import.meta.url).href,
+        imageUrls: [
+          new URL('../assets/img/lyoncaps/lc2.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc3.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc4.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc5.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc6.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc7.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc8.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc9.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc10.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc11.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc12.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc13.png', import.meta.url).href,
+          new URL('../assets/img/lyoncaps/lc14.png', import.meta.url).href,
+        ],
+        client: "Cba Saint-Luc",
+        category: "Graphisme",
+        features: [
+          "Design moderne",
+          "Palette de couleurs chaudes",
+          "Impression Stickers"
+        ]
+      },
+      {
+        id: 32,
+        title: "Stickers Scouts",
+        slug: "stickers-scouts",
+        shortDescription: "Stickers pour un événement scout",
+        longDescription: "Création de stickers pour un événement scout. Le design évoque la convivialité et l'amour des livres.",
+        tools: ["Photoshop", "Illustrator"],
+        formats: ["A2", "Print", "Web"],
+        imageUrl: new URL('../assets/img/stickersscouts/stickers-01.png', import.meta.url).href,
+        imageUrls: [
+          new URL('../assets/img/stickersscouts/stickers-02.png', import.meta.url).href,
+          new URL('../assets/img/stickersscouts/stickers-03.png', import.meta.url).href,
+        ],
+        client: "Cba Saint-Luc",
+        category: "Graphisme",
+        features: [
+          "Design moderne",
+          "Palette de couleurs chaudes",
+          "Impression Stickers"
+        ]
+      },
+      {
+        id: 33,
+        title: "Feaver Dream - Marque de vêtements",
+        slug: "feaver-dream",
+        shortDescription: "Marque de vetements",
+        longDescription: "Création d'une affiche A2 pour un concert de jazz. Travail sur la composition typographique et l’harmonie des couleurs pour évoquer l’ambiance chaleureuse du jazz.",
+        tools: ["Photoshop", "Illustrator"],
+        formats: ["A2", "Print", "Web"],
+        imageUrl: new URL('../assets/img/feaver/01.png', import.meta.url).href,
+        imageUrls: [
+          new URL('../assets/img/feaver/02.png', import.meta.url).href,
+          new URL('../assets/img/feaver/03.png', import.meta.url).href,
+          new URL('../assets/img/feaver/04.png', import.meta.url).href,
+          new URL('../assets/img/feaver/05.png', import.meta.url).href,
+          new URL('../assets/img/feaver/06.png', import.meta.url).href,
+          new URL('../assets/img/feaver/07.png', import.meta.url).href,
+          new URL('../assets/img/feaver/08.png', import.meta.url).href,
+        ],
+        client: "Concert Jazz Liège",
+        category: "Graphisme",
+        features: [
+          "Composition typographique",
+          "Palette de couleurs chaudes",
+          "Impression grand format"
+        ]
+      }
     ]
   }),
 
