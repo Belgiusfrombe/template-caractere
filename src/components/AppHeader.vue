@@ -29,7 +29,7 @@ export default {
               class="text-lime-300 pl-4 font-medium hide-on-scroll"
               style="transform: translateX(20px)"
             >
-              Développeur Web Junior
+              Graphiste & Développeur Web Junior
             </p>
             <svg width="40" transform="translate(0, -40)" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70.35 68.76"
