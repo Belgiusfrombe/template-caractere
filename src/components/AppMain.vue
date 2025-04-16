@@ -269,7 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="flex justify-center mt-10">
             <router-link
               to="/project"
-              class="text-maingreen hover-underline-animation inline-block text-lg"
+              class="inline-block text-lg py-2 px-4 bg-maingreen text-mainpurple hover:bg-white transition-all ease-in-out rounded-full"
             >
               Voir mes projets
             </router-link>

@@ -1,16 +1,19 @@
 <template>
   <div class="project-detail-page bg-[#0f172a] min-h-screen p-8">
     <!-- Navigation vers l'accueil -->
-    <div class="max-w-7xl mx-auto mb-8 flex justify-center pt-48">
-      <router-link to="/" class="text-maingreen hover-underline-animation">
+    <div class="max-w-7xl mx-auto mb-8 flex justify-center pt-48 gap-12">
+      <router-link to="/project" class="text-maingreen hover-underline-animation">
         Retour à l'accueil
+      </router-link>
+      <router-link to="/project" class="text-maingreen hover-underline-animation">
+        Retour aux projets
       </router-link>
     </div>
 
     <!-- Contenu du projet -->
     <div v-if="currentProject" class="max-w-4xl mx-auto pt-16">
       <div class="mb-8">
-        <h1 class="text-4xl font-bold text-white mb-4">
+        <h1 class="text-4xl font-bold text-white mb-4 gradient-text">
           {{ currentProject.title }}
         </h1>
         <div class="flex flex-wrap gap-2 mb-6">
@@ -31,18 +34,18 @@
             :alt="currentProject.title"
             class="w-full rounded-lg shadow-lg"
           />
-          <div class="flex gap-4">
-            <img  
-              :src="currentProject.imageUrl"
-              :alt="currentProject.title"
-              class="w-full rounded-lg shadow-lg"
-            />
-            <img
-              :src="currentProject.imageUrl"
-              :alt="currentProject.title"
-              class="w-full rounded-lg shadow-lg"
-            />
-          </div>
+<!-- Galerie d'images supplémentaires -->
+<div v-if="currentProject.imageUrls" class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+  <img
+    v-for="(img, index) in currentProject.imageUrls"
+    :key="index"
+    :src="img"
+    class="rounded-lg cursor-pointer hover:opacity-80 transition-all"
+    @click="openLightbox(img)"
+  />
+</div>
+
+
           <div class="flex gap-4">
             <a
               :href="currentProject.demoLink"
@@ -113,6 +116,21 @@
     <!-- Message d'erreur si projet non trouvé -->
     <div v-else class="text-white text-center">Projet non trouvé</div>
   </div>
+  <!-- Lightbox -->
+<div
+  v-if="lightboxImage"
+  class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+  @click.self="closeLightbox"
+>
+  <img :src="lightboxImage" class="max-w-full max-h-full rounded-lg shadow-xl" />
+  <button
+    @click="closeLightbox"
+    class="absolute top-6 right-6 text-white text-3xl"
+  >
+    &times;
+  </button>
+</div>
+
 </template>
 
 <script>
@@ -131,6 +149,17 @@ export default {
     const route = useRoute();
     const store = useProjectStore();
     const currentProjectId = ref(parseInt(route.params.id));
+    const lightboxImage = ref(null);
+
+    // Fonction pour ouvrir la lightbox
+    const openLightbox = (image) => {
+      lightboxImage.value = image;
+    };
+
+    // Fonction pour fermer la lightbox
+    const closeLightbox = () => {
+      lightboxImage.value = null;
+    };
 
     // Récupérer le projet actuel
     const currentProject = computed(() =>
@@ -171,12 +200,36 @@ export default {
       hasPrevProject,
       hasNextProject,
       navigateProject,
+      openLightbox,
+      closeLightbox,
+      lightboxImage,
     };
   },
 };
 </script>
 
 <style scoped>
+ .gradient-text {
+  background: linear-gradient(300deg, #0ecff6, #f2f2f2, #2df3ec, #22f898, #13cef8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  background-size: 200% auto;
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .hover-underline-animation {
   position: relative;
   text-decoration: none;
